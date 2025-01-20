@@ -1,0 +1,9 @@
+{env.N8N_HOST} {
+    reverse_proxy n8n:{env.N8N_PORT} {
+        flush_interval -1
+    }
+
+    tls {
+        dns cloudflare {env.CLOUDFLARE_API_TOKEN}
+    }
+}

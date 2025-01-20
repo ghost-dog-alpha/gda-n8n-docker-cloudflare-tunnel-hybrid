@@ -1,0 +1,28 @@
+# Replace <directory-path> with the path where you created folders earlier
+DATA_FOLDER=/<directory-path>
+
+# The host to serve from this will need to be acessible from every environment
+# where you want to access the n8n editor
+N8N_HOST=n8n.example.net
+
+# The port to use for N8N
+N8N_PORT=5678
+
+# The N8N Webhook host to use for webhook triggers
+# as seen from the outside world
+WEBHOOK_HOST=webhooks.example.com
+
+# Optional timezone to set which gets used by Cron-Node by default
+# If not set New York time will be used
+GENERIC_TIMEZONE=America/Chicago
+
+# The email address to use for the SSL certificate creation
+SSL_EMAIL=example@example.com
+
+# Cloudflare API TOKEN
+# Needs READ and WRITE permissiosn to the domain you want to use
+CLOUDFLARE_API_TOKEN=exaMpLetOkeNString
+
+# Cloudflare Zero Trust TOKEN
+# THe token needed for your tunnel if you are using it
+CLOUDFLARE_TUNNEL_TOKEN=exaMpLetOkeNString
