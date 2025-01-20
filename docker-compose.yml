@@ -7,7 +7,7 @@ services:
       - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
 
   caddy:
-    image: caddy:latest
+    image: ghcr.io/ghost-dog-alpha/gda-image-caddy-with-cloudflare:main
     restart: always
     ports:
       - "80:80"
